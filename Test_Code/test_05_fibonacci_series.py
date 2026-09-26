@@ -1,7 +1,7 @@
 import importlib.util
 from pathlib import Path
 
-path = Path(__file__).resolve().parents[1] / "Code" / "code_05_fibonacci_series.py"
+path = Path(__file__).resolve().parents[1] / "Code" / "05_fibonacci_series.py"
 spec = importlib.util.spec_from_file_location("program", path)
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
