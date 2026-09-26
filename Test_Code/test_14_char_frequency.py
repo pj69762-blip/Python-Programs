@@ -1,7 +1,7 @@
 import importlib.util
 from pathlib import Path
 
-path = Path(__file__).resolve().parents[1] / "Code" / "code_14_char_frequency.py"
+path = Path(__file__).resolve().parents[1] / "Code" / "14_char_frequency.py"
 spec = importlib.util.spec_from_file_location("program", path)
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
