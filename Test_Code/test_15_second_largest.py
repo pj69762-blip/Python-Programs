@@ -1,7 +1,7 @@
 import importlib.util
 from pathlib import Path
 
-path = Path(__file__).resolve().parents[1] / "Code" / "code_15_second_largest.py"
+path = Path(__file__).resolve().parents[1] / "Code" / "15_second_largest.py"
 spec = importlib.util.spec_from_file_location("program", path)
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
