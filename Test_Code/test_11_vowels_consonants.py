@@ -1,7 +1,7 @@
 import importlib.util
 from pathlib import Path
 
-path = Path(__file__).resolve().parents[1] / "Code" / "code_11_vowels_consonants.py"
+path = Path(__file__).resolve().parents[1] / "Code" / "11_vowels_consonants.py"
 spec = importlib.util.spec_from_file_location("program", path)
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
